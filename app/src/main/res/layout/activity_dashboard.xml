@@ -1,0 +1,216 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvDashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Dashboard"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- NGO Section (Initially hidden; made visible for NGO users only) -->
+        <LinearLayout
+            android:id="@+id/ngoSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+        <!-- Card View: Available Meals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Meals"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnViewAvailableMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Available Meals"
+                android:backgroundTint="#3F51B5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Card View: Request Meal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card_background"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Meal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnRequestMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Request Meal"
+                android:backgroundTint="#3F51B5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Card View: History of Received Meals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_card_background"
+            android:padding="16dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History of Received Meals"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnHistoryReceivedMeals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View History"
+                android:backgroundTint="#3F51B5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Restaurant Section (Initially hidden; made visible for Restaurant users only) -->
+    <LinearLayout
+        android:id="@+id/restaurantSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp">
+
+    <!-- Card View: Post Meal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Meal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnPostMeal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Meal"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Card View: View Requests -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Requests"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnViewRequests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Requests"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Card View: History of Donated Meals -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:padding="16dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History of Donated Meals"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3F51B5"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnHistoryDonatedMeals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View History"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
+
+    <!-- Fragment container where selected fragment will be displayed -->
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:background="#FFFFFF" />
+    </LinearLayout>
+    </ScrollView>

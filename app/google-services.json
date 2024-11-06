@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "709314659535",
+    "project_id": "kare-share",
+    "storage_bucket": "kare-share.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709314659535:android:0f481a98c59409318523ba",
+        "android_client_info": {
+          "package_name": "com.example.kareshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXFySl4vy0ZNJSmNFNcX3_WVvsiyTAXB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
