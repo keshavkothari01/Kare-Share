@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/tvDashboardTitle"
             android:layout_width="wrap_content"
@@ -204,6 +205,14 @@
             android:textColor="@android:color/white" />
     </LinearLayout>
 </LinearLayout>
+        <Button
+            android:id="@+id/btnAboutContactUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us / Contact Us"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
 
     <!-- Fragment container where selected fragment will be displayed -->
 <FrameLayout
