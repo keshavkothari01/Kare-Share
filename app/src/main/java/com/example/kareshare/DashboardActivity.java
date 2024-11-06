@@ -21,6 +21,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         String userType = getIntent().getStringExtra("userType");
 
+        // Show or hide sections based on user type
         if ("Restaurant".equalsIgnoreCase(userType)) {
             restaurantSection.setVisibility(View.VISIBLE);
             ngoSection.setVisibility(View.GONE);
@@ -29,6 +30,7 @@ public class DashboardActivity extends AppCompatActivity {
             restaurantSection.setVisibility(View.GONE);
         }
 
+        // Set button click listeners
         findViewById(R.id.btnViewAvailableMeals).setOnClickListener(v -> loadFragment(new AvailableMealsFragment()));
         findViewById(R.id.btnHistoryReceivedMeals).setOnClickListener(v -> loadFragment(new ReceivedMealsHistoryFragment()));
         findViewById(R.id.btnPostMeal).setOnClickListener(v -> loadFragment(new PostMealFragment()));
@@ -39,6 +41,9 @@ public class DashboardActivity extends AppCompatActivity {
             Intent intent = new Intent(DashboardActivity.this, AboutContactActivity.class);
             startActivity(intent);
         });
+
+        // View Meal Requests Button (for Restaurant)
+        findViewById(R.id.btnViewMealRequests).setOnClickListener(v -> loadFragment(new MealRequestsFragment()));
     }
 
     private void loadFragment(Fragment fragment) {
