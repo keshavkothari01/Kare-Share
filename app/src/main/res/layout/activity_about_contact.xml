@@ -10,9 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Existing content here, e.g., NGO Section, Restaurant Section, etc. -->
-
-        <!-- About Page Section -->
+        <!-- About Us Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,26 +37,24 @@
                 android:textColor="#000000" />
         </LinearLayout>
 
-        <!-- Contact/Support Page Section -->
+        <!-- Contact Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/rounded_card_background"
             android:padding="16dp"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp">
+            android:elevation="4dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Contact and  Support"
+                android:text="Contact and Support"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="#3F51B5"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Contact Form (Simple Placeholder Text) -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,24 +80,6 @@
                 android:textColor="@android:color/white"
                 android:layout_marginTop="8dp" />
 
-            <!-- FAQ Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Frequently Asked Questions"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#3F51B5"
-                android:layout_marginTop="16dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Q: How do I book a meal?\nA: Browse available meals and choose one to book.\n\nQ: How do I contact support?\nA: Use the contact form above."
-                android:textSize="14sp"
-                android:textColor="#000000" />
-
-            <!-- Support Contact Details -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -110,14 +88,5 @@
                 android:textColor="#000000"
                 android:layout_marginTop="16dp" />
         </LinearLayout>
-
-        <!-- Fragment container where selected fragment will be displayed -->
-        <FrameLayout
-            android:id="@+id/fragment_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="#FFFFFF" />
-
     </LinearLayout>
 </ScrollView>

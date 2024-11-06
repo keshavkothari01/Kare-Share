@@ -1,5 +1,6 @@
 package com.example.kareshare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,12 @@ public class DashboardActivity extends AppCompatActivity {
         findViewById(R.id.btnHistoryReceivedMeals).setOnClickListener(v -> loadFragment(new ReceivedMealsHistoryFragment()));
         findViewById(R.id.btnPostMeal).setOnClickListener(v -> loadFragment(new PostMealFragment()));
         findViewById(R.id.btnHistoryDonatedMeals).setOnClickListener(v -> loadFragment(new DonatedMealsHistoryFragment()));
+
+        // About Us / Contact Us Button
+        findViewById(R.id.btnAboutContactUs).setOnClickListener(v -> {
+            Intent intent = new Intent(DashboardActivity.this, AboutContactActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void loadFragment(Fragment fragment) {
